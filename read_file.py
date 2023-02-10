@@ -18,3 +18,9 @@ for line in open("pelican.txt"):  # for loop with a loop variable of line that's
 print(lines)  # printing the list and proving the data type
 print(type(lines))
 print(len(lines))
+
+# if we had an extra blank line, we could have used wildcard unpacking to remove it.
+# *poemlines, blank_line = lines
+# print(poemlines)
+
+myfileobject.close() # safely closing the file now we have finished with it
